@@ -1,0 +1,114 @@
+main{
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color:white;
+    height: 88vh ;
+    text-transform: capitalize;
+    background: linear-gradient(to right , rgb(123, 38, 123) , rgb(27, 53, 120));
+}
+
+.container{
+    padding: 25px;
+    width: 90%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.left h1{
+    font-size: 55px;
+}
+
+.right {
+    padding: 30px ;
+}
+
+button{
+    text-transform: capitalize;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 13px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: all .7s 30ms;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+button::before{
+    content: "";
+    position: absolute;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    border-radius: 30px;
+    transition: all .7s 30ms;
+
+}
+
+button::after{
+    content: "";
+    position: absolute;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    transition: all .7s 30ms;
+}
+
+button:hover{
+    background:linear-gradient(to right,rgb(95, 21, 98),rgb(148, 14, 63)) ;
+    color: white;
+}
+
+button:hover::after,
+button:hover::before{
+    /* border: 2px solid white; */
+    border-color: white;
+    width: 100%;
+    height: 100%;
+    transition: all .7s 30ms;
+    cursor: pointer;   
+}
+
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0px); }
+}
+
+.img img {
+    animation: float 2s ease-in-out infinite;
+}
+
+section{
+    background: linear-gradient(to right , rgb(123, 38, 123) , rgb(27, 53, 120));
+}
+
