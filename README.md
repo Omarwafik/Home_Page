@@ -10,5 +10,4 @@ with smooth CSS animations and a fixed 150vh page height. Great for landing page
 - Styled with pure CSS
 - Built using React functional components & hooks
 
-## 📁 Folder Structure
 
